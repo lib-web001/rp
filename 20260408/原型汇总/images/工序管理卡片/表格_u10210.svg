@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1392px" height="33px" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="696" y1="-1.0103336533827635E-15" x2="695.9999999999999" y2="33" id="LinearGradient1713">
+      <stop id="Stop1714" stop-color="#f3f7ff" offset="0" />
+      <stop id="Stop1715" stop-color="#e0e5ef" offset="1" />
+    </linearGradient>
+    <pattern id="BGPattern" patternUnits="userSpaceOnUse" alignment="0 0" imageRepeat="None" />
+    <filter x="-50.00%" y="-50.00%" width="200.00%" height="200.00%" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB" id="Filter1716">
+      <feOffset dx="0" dy="0" in="SourceGraphic" result="offset" id="offset" />
+      <feMorphology radius="1" operator="erode" in="offset" result="morphology" id="morphology" />
+      <feGaussianBlur stdDeviation="2" in="morphology" result="blur" id="blur" />
+      <feComposite in2="blur" operator="out" in="SourceGraphic" result="inverse" id="inverse" />
+      <feFlood flood-color="rgba(235, 237, 243, 1)" in="inverse" result="color" id="color" />
+      <feComposite in2="inverse" operator="in" in="color" result="shadow" id="shadow" />
+      <feComposite in2="SourceGraphic" operator="over" in="shadow" />
+    </filter>
+    <mask fill="white" id="Clip1717">
+      <path d="M 0 25  L 0 0  L 1392 0  L 1392 25  C 1392 29.48  1388.48 33  1384 33  L 8 33  C 3.519999999999999 33  0 29.48  0 25  Z " fill-rule="evenodd" />
+    </mask>
+  </defs>
+  <g transform="matrix(1 0 0 1 -18 -611 )">
+    <path d="M 0 25  L 0 0  L 1392 0  L 1392 25  C 1392 29.48  1388.48 33  1384 33  L 8 33  C 3.519999999999999 33  0 29.48  0 25  Z " fill-rule="nonzero" fill="url(#LinearGradient1713)" stroke="none" transform="matrix(1 0 0 1 18 611 )" class="fill" />
+    <path d="M 0 25  L 0 0  L 1392 0  L 1392 25  C 1392 29.48  1388.48 33  1384 33  L 8 33  C 3.519999999999999 33  0 29.48  0 25  Z " stroke-width="2" stroke-dasharray="0" stroke="rgba(199, 207, 216, 1)" fill="none" transform="matrix(1 0 0 1 18 611 )" class="stroke" mask="url(#Clip1717)" />
+  </g>
+  <style>path.fill { filter: url('#Filter1716'); }</style>
+</svg>
